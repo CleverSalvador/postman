@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "5c3de5c8-62b9-473b-a8f9-b3e9730a9947",
+		"_postman_id": "7912551f-5eff-4182-bf9e-2acf1a13705b",
 		"name": "ProyectoSpringCliente",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -340,6 +340,97 @@
 						"accountBussinesPerson",
 						"operations",
 						"626fedacf9701525aa1fbcd4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener registro de Virtual Coin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/virtualcoin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"virtualcoin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Registrar VirtualCoin a cliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/virtualcoin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"virtualcoin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener virtualCoin por usuario",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/virtualcoin/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"virtualcoin",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar VirtualCoin del usuario",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"exchangeRate\":2.0,\r\n    \"idClient\":1,\r\n    \"mounth\":1200,\r\n    \"operationType\":\r\n    {\r\n        \"id\":\"DEP\",\r\n        \"description\":\"Transferencia\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/virtualcoin/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"virtualcoin",
+						""
 					]
 				}
 			},
